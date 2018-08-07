@@ -1,0 +1,23 @@
+<script src="/js/menus.js"></script>
+<div class="header">
+	<div class="logo-div"><a href="{{ .Site.BaseURL }}"><img src="/img/{{ $.Site.Params.Logo }}" class="logo"></a></div>
+	<img src="/img/menu-act.png" id="menu-act" onclick="menu()">
+	<!-- <img src="/img/divider.png" class="divider-l"> -->
+	<nav>
+		<ul>
+			<a href="{{ .Site.BaseURL }}"><li class="{{ if .IsHome }}current{{ end }}">Home</li></a>
+			{{ range .Site.Menus.nav }}
+				{{ if .HasChildren }}<div class="dropdown-wrapper">{{ end }} 
+				<a href="{{ .URL }}"><li class="{{ if eq $.Title .Name }}current{{ end }}">{{ .Name }}{{ if .HasChildren }}<img src="/img/dropdown.png">{{ end }}</li></a>
+				{{ if .HasChildren }}
+					<div class="dropdown"><ul>
+					{{ range .Children }}
+						<a href="{{ .URL }}"><li>{{ .Name }}</li></a>
+					{{ end }}
+			 		 </ul></div></div>
+			 	{{ end }}
+			{{ end }}
+		</ul>
+	</nav>
+	<!-- <img src="/img/divider.png" class="divider-r"> -->
+</div>

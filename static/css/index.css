@@ -1,0 +1,78 @@
+.header {
+    height: 200px;
+}
+.logo-div {
+    background: none;
+    margin-right: 35px;
+}
+.bottom-screen {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 85vh;
+    background: rgb(255, 255, 255);
+    padding-bottom: 15px;
+    box-shadow: 0 0 5px black;
+}
+footer {
+    margin: 0rem;
+    width: 100%;
+    background: none;
+    box-shadow: none;
+    padding: 0rem;
+}
+.index-wrapper {
+    width: 75%;
+    max-width: 1300px;
+    margin: auto;}
+.index-wrapper img {
+    width: 30%;
+    padding: 2.5%;
+    height: auto;
+    float: left;
+    display: block;
+}
+hr { clear: left; }
+.index-wrapper div {
+    width: 65%;
+    margin-left: 35%;
+    display: block;
+}
+h1 {
+    font-size: 10vh;
+    line-height: 15vh;
+    margin-top: 0em;
+}
+h3 { text-align: center; }
+@media screen and (max-width: 825pt) {
+    .header {
+    overflow: visible; height: auto;}
+    .index-wrapper {
+        width: 90%;
+    }
+    .index-wrapper img {
+        width: 35%;
+    }
+    .logo-div { margin: 0px }
+    .index-wrapper div {
+        width: 60%;
+        margin-left: 40%;
+    }
+    .index-wrapper img { width: 100%; padding: 0rem; float: none; display: block; }
+    .index-wrapper div {width: 100%; margin-left: 0rem;}
+    .index-wrapper hr {display: none}
+}
+
+@media screen and (orientation: portrait) {
+    h1 { font-size: 7vh; line-height: 10vh;}
+    .bottom-screen { top: 90vh }
+    .index-wrapper img { width: 100%; padding: 0rem; float: none; display: block; }
+    .index-wrapper div {width: 100%; margin-left: 0rem;}
+    .index-wrapper hr {display: none}
+}
+@media screen and (max-width: 400pt) {
+    .index-wrapper img { width: 100%; padding: 0rem; float: none; display: block; }
+    .index-wrapper div {width: 100%; margin-left: 0rem;}
+    .index-wrapper hr {display: none}
+    .logo-div {background: #247ba9}
+}

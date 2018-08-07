@@ -1,0 +1,23 @@
+.blog-post {
+	width: 100%;
+	height: auto;
+	display: block;
+	overflow: auto;
+	padding: 0rem;
+}
+a { text-decoration: none; }
+.blog-img {
+    width: 30%;
+    min-width: 250pt;
+    float: left;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+@media screen and (max-width: 825pt) {
+    .blog-img {
+	width: 100%;
+	padding: 20px 0 20px 0;
+	min-width: 0em;
+    }
+}

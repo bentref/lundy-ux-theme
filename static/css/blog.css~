@@ -1,0 +1,14 @@
+.blog-post {
+	width: 100%;
+	height: auto;
+	display: block;
+	overflow: auto;
+	padding: 0rem;
+}
+a { text-decoration: none; }
+.blog-img {
+    width: 30%;
+    float: left;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}

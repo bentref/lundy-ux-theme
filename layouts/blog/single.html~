@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head>
+  <title>{{ .Title }}</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="/css/dropdown.css" />
+  <link rel="stylesheet" type="text/css" href="/css/blog.css" />
+  <link rel="shortcut icon" type="image/png" href="/img/favicon.png">
+  <script src="/js/jquery.js"></script>
+</head>
+<body>
+  {{ partial "header.html" . }}
+  <div class="content-wrapper">
+    <img class="blog-img" src="/img/blog/{{ .Params.image }}">
+    {{ .Content }}
+  </div>
+  {{ partial "footer.html" . }}
+</body>

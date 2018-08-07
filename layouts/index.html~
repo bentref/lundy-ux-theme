@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/css/index.css">
+	<link rel="stylesheet" type="text/css" href="/css/dropdown.css">
+	<link rel="shortcut icon" href="/img/favicon.png" />
+	<title>{{ .Site.Title }}</title>
+	<script src="/js/jquery.js"></script>
+</head>
+<body>
+	{{ partial "header.html" . }}
+	<div class="bottom-screen">
+		<div class="index-wrapper">
+    		{{ .Content }}
+    	</div>
+  	</div>
+</body>
